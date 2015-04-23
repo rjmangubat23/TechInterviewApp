@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.techinterview.elementz.techinterviewapp.AddUserActivity"
+    android:id="@+id/layout_add">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/ivAddUser"
+        android:onClick="onClick"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Last Name"
+        android:id="@+id/etAddLastName"
+        android:layout_below="@+id/ivAddUser"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        android:id="@+id/etAddFirstName"
+        android:layout_below="@+id/etAddLastName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Click to add Photo "
+        android:id="@+id/tvClickToAdd"
+        android:layout_above="@+id/etAddLastName"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/rgGender"
+        android:layout_below="@+id/etAddFirstName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender:"
+            android:textSize="19sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/tvGenderLabel" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="Male"
+            android:onClick="onClick"
+            android:id="@+id/rbGenderMale"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:onClick="onClick"
+            android:id="@+id/rbGenderFemale"
+            android:layout_marginLeft="40dp"
+            android:checked="false" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:text="Birthday:"
+        android:ems="10"
+        android:id="@+id/tvAddBirthdayLabel"
+        android:textSize="19sp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/rgGender" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:text="Click this text to set"
+        android:ems="10"
+        android:id="@+id/tvAddBirthday"
+        android:onClick="onClick"
+        android:textSize="19sp"
+        android:layout_marginLeft="90dp"
+        android:textStyle="italic"
+        android:layout_below="@+id/rgGender" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Age: "
+        android:id="@+id/tvAddAge"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvAddBirthday"
+        android:layout_alignLeft="@+id/ivAddUser"
+        android:layout_alignStart="@+id/ivAddUser" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Days till next Birthday:"
+        android:id="@+id/tvAddNextBirthday"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tvAddAge"
+        android:layout_marginLeft="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/btnAddUser"
+        android:onClick="onClick"
+        android:layout_below="@+id/tvAddNextBirthday"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

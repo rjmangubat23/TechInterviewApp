@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TechInterviewApp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_add">Add</string>
+    <string name="title_activity_add_user">AddUserActivity</string>
+    <string name="title_activity_view_user">ViewUserActivity</string>
+</resources>
